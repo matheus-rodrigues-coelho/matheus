@@ -1,33 +1,198 @@
-Guia Anti‑Bot + Zen
-Escolha a sessão 
-Guia Anti‑Bot (evolução)
-  <nav class="nav-vertical" aria-label="Lista de vídeos">
-    <ul id="menu-temas"><!-- preenchido via JS --></ul>
-  </nav>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rocket League – Guia Anti‑Bot + Zen</title>
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --panel: #121922;
+      --panel-2: #0f1520;
+      --text: #e8eef6;
+      --muted: #9fb0c3;
+      --brand: #4aa3ff;
+      --brand-2: #00e0a4;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0; background: linear-gradient(180deg, var(--bg), #0a1016);
+      color: var(--text); font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+    }
+    header {
+      position: sticky; top: 0; z-index: 5;
+      background: linear-gradient(90deg, var(--panel), var(--panel-2));
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      padding: 14px 18px; display: flex; align-items: center; gap: 14px;
+    }
+    header h1 { margin: 0; font-size: 18px; letter-spacing: .5px; }
+    header .tag { padding: 3px 8px; border-radius: 999px; background: #12283f; color: #b6d7ff; font-size: 12px; }
 
-  <div class="tips">
-    <h4>Como parar de ser “bot” (checklist rápido)</h4>
-    <ul>
-      <li>Aprenda <strong>half‑flip</strong> e <strong>recoveries</strong> cedo.</li>
-      <li>Domine <strong>fast aerial</strong> e <strong>kickoffs</strong> consistentes.</li>
-      <li>Pratique <strong>rotations 2v2/3v3</strong> (back‑post, 3rd man).</li>
-      <li>Treine <strong>first touch</strong> e <strong>ball control</strong> no free play.</li>
-      <li>Gerencie <strong>boost</strong> (não fique seco; pequenos pads &gt; 100 sempre).</li>
-    </ul>
-  </div>
-</aside>
+    .layout { display: grid; grid-template-columns: 300px 1fr; height: calc(100vh - 56px); }
+    aside {
+      background: var(--panel);
+      border-right: 1px solid rgba(255,255,255,0.06);
+      padding: 16px; overflow-y: auto;
+    }
+    main { padding: 16px; overflow-y: auto; }
 
-<!-- Player -->
-<main>
-  <div class="video-box">
-    <div class="video-card">
-      <iframe class="video-frame" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen title="YouTube player"></iframe>
-      <div class="info">
-        <h3 id="video-title">Rocket League</h3>
-        <p id="video-meta">Selecione um vídeo à esquerda.</p>
-        <span class="pill" id="video-pill">ANTI‑BOT</span>
+    label { color: var(--muted); font-size: 13px; }
+    select { width: 100%; margin-top: 6px; padding: 10px 12px; border-radius: 10px; background: #0f1520; color: var(--text); border: 1px solid rgba(255,255,255,0.12); }
+
+    .nav-vertical ul { list-style: none; padding: 0; margin: 12px 0 0 0; display: grid; gap: 8px; }
+    .nav-vertical li a {
+      display: grid; gap: 4px; padding: 10px 12px; text-decoration: none; color: var(--text);
+      border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; background: #0f1520;
+    }
+    .nav-vertical li a small { color: var(--muted); font-size: 12px; }
+    .nav-vertical li a:hover { border-color: rgba(74,163,255,.6); box-shadow: 0 0 0 2px rgba(74,163,255,.15) inset; }
+
+    .video-box { display: grid; gap: 12px; max-width: 980px; margin: 0 auto; }
+    .video-card { background: var(--panel); border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; overflow: hidden; }
+    .video-frame { width: 100%; aspect-ratio: 16/9; border: 0; display: block; }
+    .info { padding: 14px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between; }
+    .info h3 { margin: 0; font-size: 16px; }
+    .info p { margin: 0; color: var(--muted); font-size: 13px; }
+
+    .pill { display:inline-block; padding: 4px 8px; border-radius:999px; background:#0f2032; color:#b6d7ff; font-size:12px; }
+
+    .tips { margin-top: 18px; background: #0f1520; border: 1px dashed rgba(255,255,255,.12); border-radius: 12px; padding: 12px; }
+    .tips h4 { margin: 0 0 8px 0; font-size: 14px; }
+    .tips ul { margin: 0; padding-left: 18px; color: var(--muted); }
+
+    @media (max-width: 900px) {
+      .layout { grid-template-columns: 1fr; height: auto; }
+      aside { position: sticky; top: 56px; z-index: 4; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <span class="tag">RL</span>
+    <h1>Guia Anti‑Bot + Zen</h1>
+  </header>
+
+  <div class="layout">
+    <!-- Sidebar -->
+    <aside>
+      <section>
+        <label for="tema">Escolha a sessão</label>
+        <select id="tema">
+          <option value="ANTI_BOT">Guia Anti‑Bot (evolução)</option>
+          <option value="ZEN">Só do Zen (highlights/1v1/analyses)</option>
+        </select>
+      </section>
+
+      <nav class="nav-vertical" aria-label="Lista de vídeos">
+        <ul id="menu-temas"><!-- preenchido via JS --></ul>
+      </nav>
+
+      <div class="tips">
+        <h4>Como parar de ser “bot” (checklist rápido)</h4>
+        <ul>
+          <li>Aprenda <strong>half‑flip</strong> e <strong>recoveries</strong> cedo.</li>
+          <li>Domine <strong>fast aerial</strong> e <strong>kickoffs</strong> consistentes.</li>
+          <li>Pratique <strong>rotations 2v2/3v3</strong> (back‑post, 3rd man).</li>
+          <li>Treine <strong>first touch</strong> e <strong>ball control</strong> no free play.</li>
+          <li>Gerencie <strong>boost</strong> (não fique seco; pequenos pads &gt; 100 sempre).</li>
+        </ul>
       </div>
-    </div>
+    </aside>
+
+    <!-- Player -->
+    <main>
+      <div class="video-box">
+        <div class="video-card">
+          <iframe class="video-frame" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen title="YouTube player"></iframe>
+          <div class="info">
+            <h3 id="video-title">Rocket League</h3>
+            <p id="video-meta">Selecione um vídeo à esquerda.</p>
+            <span class="pill" id="video-pill">ANTI‑BOT</span>
+          </div>
+        </div>
+      </div>
+    </main>
   </div>
-</main>
+
+  <script>
+    // =====================
+    // MODELOS DE ENTRADA
+    // =====================
+    // Em vez de IDs fixos, usamos buscas do YouTube para montar uma playlist dinâmica
+    // Isso evita links quebrados e mantém conteúdo atualizado.
+
+    /**
+     * Item de vídeo pode ser de dois tipos:
+     *  - { type: 'search', query: 'texto de busca', titulo: '...', autor: '...' }
+     *  - { type: 'video', id: 'VIDEO_ID', titulo: '...', autor: '...' }
+     */
+
+    const TEMAS = {
+      ANTI_BOT: [
+        { type: 'search', query: 'rocket league beginner guide rotations pt br', titulo: 'Guia iniciante + rotações (PT‑BR)', autor: 'Vários criadores' },
+        { type: 'search', query: 'rocket league half flip tutorial', titulo: 'Half‑Flip essencial', autor: 'Tutoriais RL' },
+        { type: 'search', query: 'rocket league fast aerial tutorial', titulo: 'Fast Aerial consistente', autor: 'Tutoriais RL' },
+        { type: 'search', query: 'rocket league recoveries tutorial speed flip landing', titulo: 'Recoveries + Speed Flip', autor: 'Tutoriais RL' },
+        { type: 'search', query: 'rocket league kickoff strategies neutral kickoff', titulo: 'Kickoffs que funcionam', autor: 'Tutoriais RL' },
+        { type: 'search', query: 'rocket league boost management pads rotation', titulo: 'Boost management & pads', autor: 'Tutoriais RL' },
+        { type: 'search', query: 'rocket league shadow defense back post rotation', titulo: 'Defesa: shadow + back‑post', autor: 'Tutoriais RL' },
+        { type: 'search', query: 'rocket league training packs first touch car control', titulo: 'Treinos: first touch & controle', autor: 'Training Packs' },
+      ],
+      ZEN: [
+        { type: 'search', query: 'zen rocket league highlights 1v1', titulo: 'Zen – melhores momentos/1v1', autor: 'Highlights' },
+        { type: 'search', query: 'zen rocket league mechanics analysis', titulo: 'Análises de mecânicas do Zen', autor: 'Analysts' },
+        { type: 'search', query: 'zen rocket league tutorial settings camera', titulo: 'Configurações: câmera/controle', autor: 'Settings' },
+        { type: 'search', query: 'zen rocket league dribble air dribble reset', titulo: 'Dribbles / resets no estilo Zen', autor: 'Highlights + tutoriais' },
+      ]
+    };
+
+    // =====================
+    // HELPERS
+    // =====================
+
+    const selectTema = document.getElementById('tema');
+    const menuUl = document.getElementById('menu-temas');
+    const iframeEl = document.querySelector('.video-frame');
+    const titleEl = document.getElementById('video-title');
+    const metaEl = document.getElementById('video-meta');
+    const pillEl = document.getElementById('video-pill');
+
+    function ytEmbedFromItem(item) {
+      if (item.type === 'video' && item.id) {
+        return `https://www.youtube.com/embed/${item.id}?rel=0&modestbranding=1`;
+      }
+      // Fallback: playlist de busca
+      const q = encodeURIComponent(item.query || 'rocket league');
+      return `https://www.youtube.com/embed?listType=search&list=${q}&rel=0&modestbranding=1`;
+    }
+
+    function renderMenu(temaKey) {
+      const lista = TEMAS[temaKey] || [];
+      menuUl.innerHTML = '';
+      lista.forEach((video, idx) => {
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        a.href = '#';
+        a.innerHTML = `<strong>${video.titulo}</strong><small>${video.autor}</small>`;
+        a.addEventListener('click', (e) => { e.preventDefault(); trocarVideo(video, temaKey); });
+        li.appendChild(a);
+        menuUl.appendChild(li);
+        if (idx === 0) { trocarVideo(video, temaKey); }
+      });
+    }
+
+    function trocarVideo(video, temaKey) {
+      iframeEl.src = ytEmbedFromItem(video);
+      titleEl.textContent = video.titulo;
+      metaEl.textContent = video.autor;
+      pillEl.textContent = temaKey === 'ZEN' ? 'ZEN' : 'ANTI‑BOT';
+    }
+
+    // Init
+    renderMenu(selectTema.value);
+    selectTema.addEventListener('change', () => renderMenu(selectTema.value));
+  </script>
+</body>
+</html>
 
