@@ -1,0 +1,116 @@
+{
+  "tracks": [
+    {
+      "id": "iniciante",
+      "title": "Trilha Iniciante",
+      "level": "iniciantes",
+      "description": "Fundamentos, settings, movimentação, leitura de bola.",
+      "items": ["curso_basico", "aula_camera", "aula_rotacao_2s"]
+    },
+    {
+      "id": "mecanicas",
+      "title": "Mecânicas Essenciais",
+      "level": "intermediário",
+      "description": "Aerial, half-flip, recoveries, wave dash.",
+      "items": ["curso_mecanicas", "aula_half_flip", "aula_wave_dash"]
+    },
+    {
+      "id": "proplay",
+      "title": "Mindset & Pro Play",
+      "level": "avançado",
+      "description": "Tomada de decisão, pressão, review de replays.",
+      "items": ["playlist_pros", "aula_posicionamento_3s"]
+    }
+  ],
+  "items": [
+    {
+      "id": "curso_basico",
+      "type": "curso",
+      "title": "Rocket League do Zero",
+      "level": "iniciantes",
+      "tags": ["movimentação", "fundamentos"],
+      "thumb": "https://i.ytimg.com/vi/ScMzIvxBSi4/hqdefault.jpg",
+      "lessons": [
+        {
+          "id": "l01",
+          "title": "Configurações ideais (câmera/controle)",
+          "youtubeId": "dQw4w9WgXcQ"
+        },
+        {
+          "id": "l02",
+          "title": "Movimentação básica e boost management",
+          "youtubeId": "xvFZjo5PgG0"
+        }
+      ]
+    },
+    {
+      "id": "aula_camera",
+      "type": "aula",
+      "title": "Câmera e Sensibilidade: o que usar?",
+      "level": "iniciantes",
+      "tags": ["camera", "sens"],
+      "youtubeId": "sAnPI3t8qJw",
+      "thumb": "https://i.ytimg.com/vi/sAnPI3t8qJw/hqdefault.jpg"
+    },
+    {
+      "id": "aula_rotacao_2s",
+      "type": "aula",
+      "title": "Rotação correta no 2v2",
+      "level": "intermediário",
+      "tags": ["rotações","2s"],
+      "youtubeId": "QH2-TGUlwu4",
+      "thumb": "https://i.ytimg.com/vi/QH2-TGUlwu4/hqdefault.jpg"
+    },
+    {
+      "id": "curso_mecanicas",
+      "type": "curso",
+      "title": "Mecânicas Essenciais",
+      "level": "intermediário",
+      "tags": ["aerial","recoveries"],
+      "thumb": "https://i.ytimg.com/vi/ScMzIvxBSi4/hqdefault.jpg",
+      "lessons": [
+        {"id":"m01","title":"Half-Flip perfeito","youtubeId":"J---aiyznGQ"},
+        {"id":"m02","title":"Recoveries & Momentum","youtubeId":"eY52Zsg-KVI"}
+      ]
+    },
+    {
+      "id": "aula_half_flip",
+      "type": "aula",
+      "title": "Half-Flip explicado",
+      "level": "intermediário",
+      "tags": ["half-flip"],
+      "youtubeId": "ysz5S6PUM-U",
+      "thumb": "https://i.ytimg.com/vi/ysz5S6PUM-U/hqdefault.jpg"
+    },
+    {
+      "id": "aula_wave_dash",
+      "type": "aula",
+      "title": "Wave Dash na prática",
+      "level": "avançado",
+      "tags": ["wave-dash"],
+      "youtubeId": "aqz-KE-bpKQ",
+      "thumb": "https://i.ytimg.com/vi/aqz-KE-bpKQ/hqdefault.jpg"
+    },
+    {
+      "id": "playlist_pros",
+      "type": "playlist",
+      "title": "Estudos de Pro Players",
+      "level": "avançado",
+      "tags": ["pro","review"],
+      "thumb": "https://i.ytimg.com/vi/ScMzIvxBSi4/hqdefault.jpg",
+      "list": [
+        {"title":"Mentalidade competitiva","youtubeId":"48rz8udZBmQ"},
+        {"title":"Decisão sob pressão","youtubeId":"dvgZkm1xWPE"}
+      ]
+    },
+    {
+      "id": "aula_posicionamento_3s",
+      "type": "aula",
+      "title": "Posicionamento no 3v3",
+      "level": "avançado",
+      "tags": ["posicionamento","3s"],
+      "youtubeId": "ktvTqknDobU",
+      "thumb": "https://i.ytimg.com/vi/ktvTqknDobU/hqdefault.jpg"
+    }
+  ]
+}
