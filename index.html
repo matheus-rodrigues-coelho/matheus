@@ -3,30 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="theme-color" content="#0f1420">
   <title>RL Academy — by Ryser</title>
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/2/2f/Rocket_League_logo.svg">
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <header class="topbar">
+  <noscript>
+    <div style="padding:12px;background:#331; color:#fff; text-align:center;">
+      Este site precisa de JavaScript para funcionar corretamente.
+    </div>
+  </noscript>
+
+  <header class="topbar" role="banner">
     <div class="brand">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Rocket_League_logo.svg" alt="RL" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Rocket_League_logo.svg" alt="Rocket League logo" />
       <span>RL Academy</span>
     </div>
 
-    <div class="searchbar">
-      <input id="searchInput" type="search" placeholder="Buscar cursos, aulas ou mecânicas..." />
+    <div class="searchbar" role="search">
+      <input id="searchInput" type="search" placeholder="Buscar cursos, aulas ou mecânicas..." aria-label="Buscar cursos, aulas ou mecânicas" />
     </div>
 
-    <nav class="usernav">
-      <button id="viewProgress">Meu Progresso</button>
+    <nav class="usernav" aria-label="Ações do usuário">
+      <button id="viewProgress" type="button">Meu Progresso</button>
       <a class="github" href="https://github.com/SEU-USUARIO/SEU-REPO" target="_blank" rel="noopener">GitHub</a>
     </nav>
   </header>
 
-  <main class="layout">
-    <aside class="sidebar">
+  <main class="layout" role="main">
+    <aside class="sidebar" aria-label="Trilhas e filtros">
       <h3>Trilhas</h3>
-      <ul id="tracksList"><!-- preenchido via JS --></ul>
+      <ul id="tracksList" aria-live="polite"><!-- preenchido via JS --></ul>
 
       <h3>Filtros</h3>
       <label class="filter">
@@ -57,27 +65,33 @@
         <p>Trilhas por nível, cursos práticos, vídeos e exercícios. Estude como na Alura — versão RL 😎</p>
       </div>
 
-      <section>
+      <section aria-labelledby="sectionTitle">
         <h2 id="sectionTitle">Destaques</h2>
-        <div id="cards" class="cards"><!-- preenchido via JS --></div>
+        <div id="cards" class="cards" aria-live="polite"><!-- preenchido via JS --></div>
       </section>
     </section>
   </main>
 
   <!-- Modal do player -->
-  <div id="playerModal" class="modal hidden">
+  <div id="playerModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="playerTitle">
     <div class="modal-content">
-      <button id="closeModal" class="close">×</button>
+      <button id="closeModal" class="close" type="button" aria-label="Fechar player">×</button>
       <h3 id="playerTitle"></h3>
       <div class="playerWrapper">
         <!-- YouTube embed -->
-        <iframe id="playerFrame" src="" title="YouTube player" frameborder="0"
+        <iframe
+          id="playerFrame"
+          src=""
+          title="YouTube player"
+          frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
       </div>
       <div class="lessonMeta">
-        <button id="markDone">Marcar como concluída</button>
-        <span id="lessonStatus"></span>
+        <button id="markDone" type="button">Marcar como concluída</button>
+        <span id="lessonStatus" aria-live="polite"></span>
       </div>
     </div>
   </div>
