@@ -11,7 +11,7 @@ const state = {
 };
 
 async function loadData(){
-  const res = await fetch("data/content.json");
+  const res = await fetch("content.json");
   state.data = await res.json();
   renderTracks();
   renderItems(getVisibleItems(), "Destaques");
@@ -140,3 +140,4 @@ $("#viewProgress").addEventListener("click", ()=>{
 });
 
 loadData();
+
