@@ -1,10 +1,10 @@
 {
   "tracks": [
     {
-      "id": "iniciante",
+      "id": "iniciantes",
       "title": "Trilha Iniciante",
       "level": "iniciantes",
-      "description": "Fundamentos, settings, movimentação, leitura de bola.",
+      "description": "Primeiros passos no Rocket League.",
       "items": ["curso_basico", "aula_camera", "aula_rotacao_2s"]
     },
     {
@@ -19,7 +19,7 @@
       "title": "Mindset & Pro Play",
       "level": "avançado",
       "description": "Tomada de decisão, pressão, review de replays.",
-      "items": ["playlist_pros", "aula_posicionamento_3s"]
+      "items": ["playlist_pros", "aula_posicionamento_3s", "curso_proplay"]
     }
   ],
   "items": [
@@ -27,27 +27,20 @@
       "id": "curso_basico",
       "type": "curso",
       "title": "Rocket League do Zero",
-      "level": "iniciantes",
+      "level": "iniciante",
       "tags": ["movimentação", "fundamentos"],
       "thumb": "https://i.ytimg.com/vi/ScMzIvxBSi4/hqdefault.jpg",
       "lessons": [
-        {
-          "id": "l01",
-          "title": "Configurações ideais (câmera/controle)",
-          "youtubeId": "dQw4w9WgXcQ"
-        },
-        {
-          "id": "l02",
-          "title": "Movimentação básica e boost management",
-          "youtubeId": "xvFZjo5PgG0"
-        }
+        {"id":"l01","title":"Configurações ideais (câmera/controle)","youtubeId":"dQw4w9WgXcQ"},
+        {"id":"l02","title":"Movimentação básica e boost management","youtubeId":"xvFZjo5PgG0"},
+        {"id":"l03","title":"Jogo em equipe e passes","youtubeId":"QH2-TGUlwu4"}
       ]
     },
     {
       "id": "aula_camera",
       "type": "aula",
       "title": "Câmera e Sensibilidade: o que usar?",
-      "level": "iniciantes",
+      "level": "iniciante",
       "tags": ["camera", "sens"],
       "youtubeId": "sAnPI3t8qJw",
       "thumb": "https://i.ytimg.com/vi/sAnPI3t8qJw/hqdefault.jpg"
@@ -70,7 +63,8 @@
       "thumb": "https://i.ytimg.com/vi/ScMzIvxBSi4/hqdefault.jpg",
       "lessons": [
         {"id":"m01","title":"Half-Flip perfeito","youtubeId":"J---aiyznGQ"},
-        {"id":"m02","title":"Recoveries & Momentum","youtubeId":"eY52Zsg-KVI"}
+        {"id":"m02","title":"Recoveries & Momentum","youtubeId":"eY52Zsg-KVI"},
+        {"id":"m03","title":"Wave Dash e Chain Dashes","youtubeId":"aqz-KE-bpKQ"}
       ]
     },
     {
@@ -100,7 +94,8 @@
       "thumb": "https://i.ytimg.com/vi/ScMzIvxBSi4/hqdefault.jpg",
       "list": [
         {"title":"Mentalidade competitiva","youtubeId":"48rz8udZBmQ"},
-        {"title":"Decisão sob pressão","youtubeId":"dvgZkm1xWPE"}
+        {"title":"Decisão sob pressão","youtubeId":"dvgZkm1xWPE"},
+        {"title":"Controle de bola e fakes","youtubeId":"ktvTqknDobU"}
       ]
     },
     {
@@ -111,6 +106,19 @@
       "tags": ["posicionamento","3s"],
       "youtubeId": "ktvTqknDobU",
       "thumb": "https://i.ytimg.com/vi/ktvTqknDobU/hqdefault.jpg"
+    },
+    {
+      "id": "curso_proplay",
+      "type": "curso",
+      "title": "Pro Play: Estratégias avançadas",
+      "level": "pro",
+      "tags": ["estratégia","tomada de decisão","macro"],
+      "thumb": "https://i.ytimg.com/vi/ScMzIvxBSi4/hqdefault.jpg",
+      "lessons": [
+        {"id":"p01","title":"Leitura de jogo e antecipação","youtubeId":"pBkHHoOIIn8"},
+        {"id":"p02","title":"Rotação defensiva e ofensiva","youtubeId":"nYuaQP0MQXA"},
+        {"id":"p03","title":"Mindset competitivo e preparo mental","youtubeId":"2vjPBrBU-TM"}
+      ]
     }
   ]
 }
