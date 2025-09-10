@@ -5,21 +5,52 @@
       "title": "Trilha Iniciante",
       "level": "iniciantes",
       "description": "Primeiros passos no Rocket League.",
-      "items": ["curso_basico", "aula_camera", "aula_rotacao_2s"]
+      "items": [
+        "curso_basico",
+        "aula_camera",
+        "aula_rotacao_2s"
+      ]
     },
     {
       "id": "mecanicas",
       "title": "Mecânicas Essenciais",
       "level": "intermediário",
       "description": "Aerial, half-flip, recoveries, wave dash.",
-      "items": ["curso_mecanicas", "aula_half_flip", "aula_wave_dash"]
+      "items": [
+        "curso_mecanicas",
+        "aula_half_flip",
+        "aula_wave_dash"
+      ]
     },
     {
       "id": "proplay",
       "title": "Mindset & Pro Play",
       "level": "avançado",
       "description": "Tomada de decisão, pressão, review de replays.",
-      "items": ["playlist_pros", "aula_posicionamento_3s", "curso_proplay"]
+      "items": [
+        "playlist_pros",
+        "aula_posicionamento_3s",
+        "curso_proplay"
+      ]
+    },
+    {
+      "id": "highlights",
+      "title": "Highlights e Entretenimento",
+      "level": "pro",
+      "description": "Assista aos melhores highlights e vídeos de entretenimento de Rocket League",
+      "items": [
+        "castrin_rl",
+        "alanzoka_rl",
+        "jatozord_bronze_ssl",
+        "ishow_firewall",
+        "jatozord_ranks",
+        "dark_pro_jogando",
+        "evample",
+        "zen_noob",
+        "zen_dnv",
+        "zen_dnv_pae",
+        "zen_treino"
+      ]
     }
   ],
   "items": [
@@ -28,12 +59,27 @@
       "type": "curso",
       "title": "Rocket League do Zero",
       "level": "iniciante",
-      "tags": ["movimentação", "fundamentos"],
+      "tags": [
+        "movimentação",
+        "fundamentos"
+      ],
       "thumb": "https://i.ytimg.com/vi/ScMzIvxBSi4/hqdefault.jpg",
       "lessons": [
-        {"id":"l01","title":"Configurações ideais (câmera/controle)","youtubeId":"dQw4w9WgXcQ"},
-        {"id":"l02","title":"Movimentação básica e boost management","youtubeId":"xvFZjo5PgG0"},
-        {"id":"l03","title":"Jogo em equipe e passes","youtubeId":"QH2-TGUlwu4"}
+        {
+          "id": "l01",
+          "title": "Configurações ideais (câmera/controle)",
+          "youtubeId": "dQw4w9WgXcQ"
+        },
+        {
+          "id": "l02",
+          "title": "Movimentação básica e boost management",
+          "youtubeId": "xvFZjo5PgG0"
+        },
+        {
+          "id": "l03",
+          "title": "Jogo em equipe e passes",
+          "youtubeId": "QH2-TGUlwu4"
+        }
       ]
     },
     {
@@ -41,7 +87,10 @@
       "type": "aula",
       "title": "Câmera e Sensibilidade: o que usar?",
       "level": "iniciante",
-      "tags": ["camera", "sens"],
+      "tags": [
+        "camera",
+        "sens"
+      ],
       "youtubeId": "sAnPI3t8qJw",
       "thumb": "https://i.ytimg.com/vi/sAnPI3t8qJw/hqdefault.jpg"
     },
@@ -50,7 +99,10 @@
       "type": "aula",
       "title": "Rotação correta no 2v2",
       "level": "intermediário",
-      "tags": ["rotações","2s"],
+      "tags": [
+        "rotações",
+        "2s"
+      ],
       "youtubeId": "QH2-TGUlwu4",
       "thumb": "https://i.ytimg.com/vi/QH2-TGUlwu4/hqdefault.jpg"
     },
@@ -59,12 +111,27 @@
       "type": "curso",
       "title": "Mecânicas Essenciais",
       "level": "intermediário",
-      "tags": ["aerial","recoveries"],
+      "tags": [
+        "aerial",
+        "recoveries"
+      ],
       "thumb": "https://i.ytimg.com/vi/ScMzIvxBSi4/hqdefault.jpg",
       "lessons": [
-        {"id":"m01","title":"Half-Flip perfeito","youtubeId":"J---aiyznGQ"},
-        {"id":"m02","title":"Recoveries & Momentum","youtubeId":"eY52Zsg-KVI"},
-        {"id":"m03","title":"Wave Dash e Chain Dashes","youtubeId":"aqz-KE-bpKQ"}
+        {
+          "id": "m01",
+          "title": "Half-Flip perfeito",
+          "youtubeId": "J---aiyznGQ"
+        },
+        {
+          "id": "m02",
+          "title": "Recoveries & Momentum",
+          "youtubeId": "eY52Zsg-KVI"
+        },
+        {
+          "id": "m03",
+          "title": "Wave Dash e Chain Dashes",
+          "youtubeId": "aqz-KE-bpKQ"
+        }
       ]
     },
     {
@@ -72,7 +139,9 @@
       "type": "aula",
       "title": "Half-Flip explicado",
       "level": "intermediário",
-      "tags": ["half-flip"],
+      "tags": [
+        "half-flip"
+      ],
       "youtubeId": "ysz5S6PUM-U",
       "thumb": "https://i.ytimg.com/vi/ysz5S6PUM-U/hqdefault.jpg"
     },
@@ -81,7 +150,9 @@
       "type": "aula",
       "title": "Wave Dash na prática",
       "level": "avançado",
-      "tags": ["wave-dash"],
+      "tags": [
+        "wave-dash"
+      ],
       "youtubeId": "aqz-KE-bpKQ",
       "thumb": "https://i.ytimg.com/vi/aqz-KE-bpKQ/hqdefault.jpg"
     },
@@ -90,12 +161,24 @@
       "type": "playlist",
       "title": "Estudos de Pro Players",
       "level": "avançado",
-      "tags": ["pro","review"],
+      "tags": [
+        "pro",
+        "review"
+      ],
       "thumb": "https://i.ytimg.com/vi/ScMzIvxBSi4/hqdefault.jpg",
       "list": [
-        {"title":"Mentalidade competitiva","youtubeId":"48rz8udZBmQ"},
-        {"title":"Decisão sob pressão","youtubeId":"dvgZkm1xWPE"},
-        {"title":"Controle de bola e fakes","youtubeId":"ktvTqknDobU"}
+        {
+          "title": "Mentalidade competitiva",
+          "youtubeId": "48rz8udZBmQ"
+        },
+        {
+          "title": "Decisão sob pressão",
+          "youtubeId": "dvgZkm1xWPE"
+        },
+        {
+          "title": "Controle de bola e fakes",
+          "youtubeId": "ktvTqknDobU"
+        }
       ]
     },
     {
@@ -103,7 +186,10 @@
       "type": "aula",
       "title": "Posicionamento no 3v3",
       "level": "avançado",
-      "tags": ["posicionamento","3s"],
+      "tags": [
+        "posicionamento",
+        "3s"
+      ],
       "youtubeId": "ktvTqknDobU",
       "thumb": "https://i.ytimg.com/vi/ktvTqknDobU/hqdefault.jpg"
     },
@@ -112,13 +198,161 @@
       "type": "curso",
       "title": "Pro Play: Estratégias avançadas",
       "level": "pro",
-      "tags": ["estratégia","tomada de decisão","macro"],
+      "tags": [
+        "estratégia",
+        "tomada de decisão",
+        "macro"
+      ],
       "thumb": "https://i.ytimg.com/vi/ScMzIvxBSi4/hqdefault.jpg",
       "lessons": [
-        {"id":"p01","title":"Leitura de jogo e antecipação","youtubeId":"pBkHHoOIIn8"},
-        {"id":"p02","title":"Rotação defensiva e ofensiva","youtubeId":"nYuaQP0MQXA"},
-        {"id":"p03","title":"Mindset competitivo e preparo mental","youtubeId":"2vjPBrBU-TM"}
+        {
+          "id": "p01",
+          "title": "Leitura de jogo e antecipação",
+          "youtubeId": "pBkHHoOIIn8"
+        },
+        {
+          "id": "p02",
+          "title": "Rotação defensiva e ofensiva",
+          "youtubeId": "nYuaQP0MQXA"
+        },
+        {
+          "id": "p03",
+          "title": "Mindset competitivo e preparo mental",
+          "youtubeId": "2vjPBrBU-TM"
+        }
       ]
+    },
+    {
+      "id": "castrin_rl",
+      "type": "aula",
+      "title": "Castrin no Rocket League",
+      "level": "pro",
+      "tags": [
+        "entretenimento",
+        "highlight"
+      ],
+      "youtubeId": "wkod9T86btc",
+      "thumb": "https://i.ytimg.com/vi/wkod9T86btc/hqdefault.jpg"
+    },
+    {
+      "id": "alanzoka_rl",
+      "type": "aula",
+      "title": "Alanzoka jogando Rocket League",
+      "level": "pro",
+      "tags": [
+        "entretenimento",
+        "stream"
+      ],
+      "youtubeId": "Pvh0w0BeXeA",
+      "thumb": "https://i.ytimg.com/vi/Pvh0w0BeXeA/hqdefault.jpg"
+    },
+    {
+      "id": "jatozord_bronze_ssl",
+      "type": "aula",
+      "title": "Jatozord: do Bronze ao SSL",
+      "level": "pro",
+      "tags": [
+        "jornada",
+        "rank"
+      ],
+      "youtubeId": "GAdfZA7Crhc",
+      "thumb": "https://i.ytimg.com/vi/GAdfZA7Crhc/hqdefault.jpg"
+    },
+    {
+      "id": "ishow_firewall",
+      "type": "aula",
+      "title": "IShow e Firewall jogando Rocket League",
+      "level": "pro",
+      "tags": [
+        "entretenimento",
+        "dupla"
+      ],
+      "youtubeId": "ItMiZk3_yVg",
+      "thumb": "https://i.ytimg.com/vi/ItMiZk3_yVg/hqdefault.jpg"
+    },
+    {
+      "id": "jatozord_ranks",
+      "type": "aula",
+      "title": "Jatozord batendo em todos os ranks",
+      "level": "pro",
+      "tags": [
+        "entretenimento",
+        "rank"
+      ],
+      "youtubeId": "3IQP3mRm1dc",
+      "thumb": "https://i.ytimg.com/vi/3IQP3mRm1dc/hqdefault.jpg"
+    },
+    {
+      "id": "dark_pro_jogando",
+      "type": "aula",
+      "title": "Dark pro jogando Rocket League",
+      "level": "pro",
+      "tags": [
+        "pro",
+        "gameplay"
+      ],
+      "youtubeId": "mjL7EHEO83Y",
+      "thumb": "https://i.ytimg.com/vi/mjL7EHEO83Y/hqdefault.jpg"
+    },
+    {
+      "id": "evample",
+      "type": "aula",
+      "title": "Evample jogando Rocket League",
+      "level": "pro",
+      "tags": [
+        "pro",
+        "gameplay"
+      ],
+      "youtubeId": "z5k7EbNsxdM",
+      "thumb": "https://i.ytimg.com/vi/z5k7EbNsxdM/hqdefault.jpg"
+    },
+    {
+      "id": "zen_noob",
+      "type": "aula",
+      "title": "Zen amassando noob",
+      "level": "pro",
+      "tags": [
+        "zen",
+        "gameplay"
+      ],
+      "youtubeId": "LCmEX7AmMDs",
+      "thumb": "https://i.ytimg.com/vi/LCmEX7AmMDs/hqdefault.jpg"
+    },
+    {
+      "id": "zen_dnv",
+      "type": "aula",
+      "title": "Zen jogando novamente",
+      "level": "pro",
+      "tags": [
+        "zen",
+        "highlight"
+      ],
+      "youtubeId": "LPgATJHTQ0w",
+      "thumb": "https://i.ytimg.com/vi/LPgATJHTQ0w/hqdefault.jpg"
+    },
+    {
+      "id": "zen_dnv_pae",
+      "type": "aula",
+      "title": "Zen jogando novamente (ne pae)",
+      "level": "pro",
+      "tags": [
+        "zen",
+        "highlight"
+      ],
+      "youtubeId": "KvNclHKtTHU",
+      "thumb": "https://i.ytimg.com/vi/KvNclHKtTHU/hqdefault.jpg"
+    },
+    {
+      "id": "zen_treino",
+      "type": "aula",
+      "title": "Rotina de treino do Zen",
+      "level": "pro",
+      "tags": [
+        "zen",
+        "treino"
+      ],
+      "youtubeId": "H9xCNEnt5Rw",
+      "thumb": "https://i.ytimg.com/vi/H9xCNEnt5Rw/hqdefault.jpg"
     }
   ]
 }
